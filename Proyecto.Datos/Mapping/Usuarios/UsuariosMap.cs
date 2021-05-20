@@ -11,7 +11,7 @@ namespace Proyecto.Datos.Mapping.Usuarios
         public void Configure(EntityTypeBuilder<Usuarios> builder)
         {
             builder.ToTable("usuario")
-                .HasKey(c => c.);
+                .HasKey(c => c.nombre);
             builder.Property(c => c.nombre)
                 .HasMaxLength(50);
             builder.Property(c => c.descripcion)

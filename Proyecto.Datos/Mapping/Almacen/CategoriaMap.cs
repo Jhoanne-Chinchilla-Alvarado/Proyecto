@@ -20,4 +20,3 @@ namespace Proyecto.Datos.Mapping.Almacen
             }
         }
     }
-}

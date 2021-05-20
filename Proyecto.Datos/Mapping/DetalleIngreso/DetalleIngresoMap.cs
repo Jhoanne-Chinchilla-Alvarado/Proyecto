@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Proyecto.Datos.Mapping.Compra
 {
-    class CompraMap
+    class DetalleIngresoMap
     {
     }
 }
