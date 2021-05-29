@@ -11,14 +11,13 @@ namespace Proyecto.Datos.Mapping.DetalleVentas
     {
         public void Configure(EntityTypeBuilder<DetalleVenta> builder)
         {
-            builder.ToTable("DetalleVentas")
-                .HasKey(c => c.idDetalleventa);
-            builder.Property(c => c.precioDetalleventa)
+            builder.ToTable("DetalleVenta")
+                .HasKey(c => c.idDetalleVenta);
+            builder.Property(c => c.cantidadventas)
                 .HasMaxLength(50);
-            builder.Property(c => c.cantidad)
+            builder.Property(c => c.idventa)
                 .HasMaxLength(256);
-            builder.Property(c => c.descuento)
-                .HasMaxLength(256);
+            
         }
     }
 }

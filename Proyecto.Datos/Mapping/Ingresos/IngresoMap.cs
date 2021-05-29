@@ -1,9 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using Proyecto.Entidades.Ingreso;
-using System;
-using System.Collections.Generic;
-using System.Text;
+using Proyecto.Entidades.Ingresos;
 
 namespace Proyecto.Datos.Mapping.Ingresos
 {
@@ -13,17 +10,17 @@ namespace Proyecto.Datos.Mapping.Ingresos
         {
             builder.ToTable("Ingreso")
                 .HasKey(c => c.idingreso);
-            builder.Property(c => c.numerocomprobante)
+            builder.Property(c => c.idusuario)
                 .HasMaxLength(50);
-            builder.Property(c => c.seriecomprobante)
-                .HasMaxLength(256);
-            builder.Property(c => c.tipocomprobante)
+            builder.Property(c => c.tipocomprobanteingreso)
                 .HasMaxLength(50);
-            builder.Property(c => c.fechaHora)
-                .HasMaxLength(256);
-            builder.Property(c => c.estado)
+            builder.Property(c => c.seriecomprobanteingreso)
                 .HasMaxLength(50);
-            builder.Property(c => c.impuesto)
+            builder.Property(c => c.numerocomprobanteingreso)
+                .HasMaxLength(50);
+            builder.Property(c => c.fechaHoraingreso)
+                .HasMaxLength(50);
+            builder.Property(c => c.impuestoingreso)
                 .HasMaxLength(256);
         }
     }

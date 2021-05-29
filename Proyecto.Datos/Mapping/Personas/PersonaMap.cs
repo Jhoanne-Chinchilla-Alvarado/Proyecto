@@ -13,10 +13,15 @@ namespace Proyecto.Datos.Mapping.Personas
         {
             builder.ToTable("Persona")
                 .HasKey(c => c.idpersona);
-            builder.Property(c => c.nombre)
-                .HasMaxLength(50);
-            builder.Property(c => c.tipoPersona)
+            builder.Property(c => c.nombrepersona)
                 .HasMaxLength(256);
+            builder.Property(c => c.idtelefono)
+                .HasMaxLength(50);
+            builder.Property(c => c.numerodocumento)
+               .HasMaxLength(50);
+            builder.Property(c => c.email)
+                .HasMaxLength(256);
+            
         }
     }
 }

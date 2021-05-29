@@ -7,9 +7,9 @@ using System.Text;
 
 namespace Proyecto.Datos.Mapping.Ventas
 {
-    public class VentaMap : IEntityTypeConfiguration<Venta>
+    public class VentaMap : IEntityTypeConfiguration<Entidades.Ventas.DetalleVentas>
     {
-        public void Configure(EntityTypeBuilder<Venta> builder)
+        public void Configure(EntityTypeBuilder<Entidades.Ventas.DetalleVentas> builder)
         {
             builder.ToTable("Venta")
                 .HasKey(c => c.idventa);

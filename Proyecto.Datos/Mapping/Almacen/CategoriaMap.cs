@@ -12,11 +12,10 @@ namespace Proyecto.Datos.Mapping.Almacen
         public void Configure(EntityTypeBuilder<Categoria> builder)
         {
             builder.ToTable("categoria")
-                .HasKey(c => c.idcategoria);
-            builder.Property(c => c.nombre)
+                .HasKey(a => a.Idcategoria);
+            builder.Property(a => a.Nombrecategoria)
                 .HasMaxLength(50);
-            builder.Property(c => c.descripcion)
-                .HasMaxLength(256);
+           
         }
     }
     }
